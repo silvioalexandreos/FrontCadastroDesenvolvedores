@@ -2,43 +2,45 @@
 <html>
 <head>
 	<title>Cadastro Nível</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-	<div class="menu">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="CadastroDesenvolvedor.html">Cadastro Desenvolvedor</a></li>
-			<li><a href="CadastroNivel.html">Cadastro Nível</a></li>
-		</ul>
-	</div>
-	<div>
-		<h1 class="h1">Cadastro de Nível</h1>
-	</div>
-	<div>
-		<form class="form">
-			<label>Nível:</label>
-			<br/>
-			<select name="nivel">
-				<option selected="" value="">Selecione nível</option>
-				<option selected="junior">Junior</option>
-				<option selected="pleno">Pleno</option>
-				<option selected="senior">Senior</option>
-			</select>
-			
-			<br/>
-			<br/>
 
-			<label>Valor da horas:</label>
-			<br/>
-			<input type="input" name="vlrHoras">
-			<br/>
-			<br/>
+<body>
+	<header>
+		<h1 class="titulo-pagina">Cadastro de Nível</h1>
+
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="CadastroDesenvolvedor.html">Cadastro Desenvolvedor</a></li>
+				<li><a href="CadastroNivel.html">Cadastro Nível</a></li>
+			</ul>
+		</div>
+
+	</header>
+	
+	<main>
+		
+		<form class="form">
+
+			<fieldset>
+				<legend class="label">Selecione o nível</legend>
+				<select class="fieldset-select">
+					<option>Junior</option>
+					<option>Pleno</option>
+					<option>Senior</option>
+				</select>
+			</fieldset>
 			
-			<input type="button" name="salvar" value="Salvar">
-			<input type="button" name="atualizar" value="Atualizar">
-			<input type="button" name="excluir" value="Excluir">
+
+			<label for="valor-hora" class="label">Valor hora</label>
+			<input type="text" class="input-padrao" id="valor-hora" required placeholder="25,00">
+			
+			<input type="submit" value="Salvar" class="salvar">
 		</form>		
-	</div>
+
+	</main>
 </body>
 </html>
